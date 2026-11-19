@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শুভ জন্মদিন শিমরান! 💖</title>
+    <!-- Favicon (Emoji 💖) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= SURPRISE SCREEN ================= -->
+    <div id="surprise-screen" class="surprise-container">
+        <div class="sparkles-bg"></div>
+        <div class="surprise-card">
+            <h2 class="entry-title">শিমরান, তোমার জন্য একটি বিশেষ উপহার অপেক্ষা করছে... 🎁</h2>
+            <p class="entry-subtitle">নিচের উপহারের বাক্সটিতে ক্লিক করে খুলে দেখো!</p>
+            
+            <!-- Ultra Luxury 3D Animated Gift Box -->
+            <div class="gift-box-wrapper" id="gift-box-btn" title="ক্লিক করে খোলো!">
+                <div class="box-halo-glow"></div>
+                
+                <!-- Floating Magic Sparkles Around Box -->
+                <div class="box-magic-dust">
+                    <span class="dust dust-1">✨</span>
+                    <span class="dust dust-2">💖</span>
+                    <span class="dust dust-3">⭐</span>
+                    <span class="dust dust-4">✨</span>
+                </div>
+
+                <div class="gift-box">
+                    <!-- Opening Light Burst -->
+                    <div class="box-burst-light"></div>
+
+                    <!-- 3D Gift Lid -->
+                    <div class="gift-lid">
+                        <div class="gift-lid-rim"></div>
+                        <div class="gift-lid-ribbon"></div>
+                        <!-- 3D Luxury Satin Bow -->
+                        <div class="gift-bow">
+                            <div class="bow-loop bow-left"></div>
+                            <div class="bow-loop bow-right"></div>
+                            <div class="bow-center"></div>
+                            <div class="bow-tail tail-left"></div>
+                            <div class="bow-tail tail-right"></div>
+                        </div>
+                    </div>
+
+                    <!-- 3D Gift Box Body -->
+                    <div class="gift-box-body">
+                        <div class="gift-box-ribbon-v">
+                            <div class="ribbon-shine"></div>
+                        </div>
+                        <div class="gift-box-ribbon-h"></div>
+                        <div class="box-face-highlight"></div>
+
+                        <!-- Hanging Gift Tag for Shimran -->
+                        <div class="gift-tag">
+                            <div class="tag-string"></div>
+                            <div class="tag-content">For: Shimran ❤️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="open-btn" id="open-gift-btn">উপহারটি খোলো ✨</button>
+        </div>
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div id="main-content" class="main-layout hidden">
+        <!-- Floating Balloons Container -->
+        <div class="balloon-container" id="balloon-container"></div>
+        
+        <!-- Floating Sparkling Stars -->
+        <div class="sparkle-container" id="sparkle-container"></div>
+
+        <!-- Floating Logo Widget -->
+        <div class="logo-widget">
+            <span>Shimran 💖</span>
+        </div>
+
+        <!-- Float Music Player Widget -->
+        <div class="music-widget">
+            <button id="music-btn" class="music-toggle-btn" title="মিউজিক বাজান">
+                <i class="fa-solid fa-play"></i> <span id="music-btn-text">Play Music</span>
+            </button>
+        </div>
+
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <h1 class="main-title">Happy Birthday, <span class="highlight-name">Shimran!</span> 🎉</h1>
+            <p class="hero-tagline">May your day be as beautiful and sweet as you are! ✨</p>
+            
+            <!-- Polaroid Frame -->
+            <div class="polaroid-wrapper">
+                <div class="polaroid-frame">
+                    <img src="hello1.jpeg" alt="Shimran's Birthday Picture" class="polaroid-img">
+                    <div class="polaroid-caption">
+                        <span>Birthday Girl Shimran 💖</span>
+                        <span class="polaroid-date" id="current-date">Sep 26</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Heartfelt Message Letter Section -->
+        <section class="letter-section">
+            <div class="envelope-wrapper">
+                <div class="envelope" id="envelope-card">
+                    <div class="envelope-front">
+                        <div class="seal">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <p class="envelope-text">তোমার জন্য একটি চিঠি 💌 (ক্লিক করো)</p>
+                    </div>
+                    <div class="envelope-letter">
+                        <div class="letter-header">
+                            <h3>শুভ জন্মদিন শিমরান! 🎂✨</h3>
+                        </div>
+                        <div class="letter-body">
+                            <p class="bengali-text">
+                                আজকের এই বিশেষ দিনে শুধু এটুকুই কামনা করি—তোমার জীবনে সবসময় হাসি, অফুরন্ত আনন্দ আর শান্তির ছোঁয়া থাকুক।
+                            </p>
+                            <p class="bengali-text">
+                                তুমি শুধু একজন বিশেষ মানুষ নও, তুমি আমার জীবনের সবচেয়ে সুন্দর উপহার। তোমার মিষ্টি হাসি আর উপস্থিতি আমার দিনগুলোকে রঙিন করে তোলে। নতুন এই বছরটি তোমার জন্য দারুণ সব সাফল্য ও অপরিসীম খুশি নিয়ে আসুক।
+                            </p>
+                            <p class="english-wish">
+                                Make a wish and have the happiest birthday, my love! 🎂✨
+                            </p>
+                        </div>
+                        <div class="letter-footer">
+                            <p class="signature">— তোমার প্রিয় মানুষ ❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Generator Section -->
+        <section class="vibe-section">
+            <div class="vibe-card">
+                <div class="vibe-icon">🌸</div>
+                <p class="vibe-intro">শিমরান, আজকের বিশেষ দিনে তোমার জন্য একটি মিষ্টি কার্ড খুলতে বোতামটিতে চাপ দাও!</p>
+                <div class="vibe-display-container">
+                    <p id="vibe-display" class="vibe-text">ক্লিক করার জন্য অপেক্ষা করছে... </p>
+                </div>
+                <button id="vibe-btn" class="vibe-generator-btn">
+                    <i class="fa-solid"></i> মিষ্টি বার্তাটি দেখো 
+                </button>
+            </div>
+        </section>
+
+
+
+        <!-- Interactive Cake Section -->
+        <section class="cake-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">চাইলে এই মোমবাতিগুলো নেভাতে পারো 🎂</h2>
+            </div>
+
+            <!-- CSS Birthday Cake -->
+            <div class="cake-container">
+                <div class="cake">
+                    <!-- Candles -->
+                    <div class="candles">
+                        <div class="candle" id="candle-1">
+                            <div class="flame animate-flicker"></div>
+                        </div>
+                        <div class="candle" id="candle-2">
+                            <div class="flame animate-flicker"></div>
+                        </div>
+                        <div class="candle" id="candle-3">
+                            <div class="flame animate-flicker"></div>
+                        </div>
+                    </div>
+                    <!-- Plate -->
+                    <div class="cake-plate"></div>
+                    <!-- Cake Bottom Layer -->
+                    <div class="layer layer-bottom"></div>
+                    <!-- Cake Middle Layer -->
+                    <div class="layer layer-middle"></div>
+                    <!-- Cake Top Layer -->
+                    <div class="layer layer-top">
+                        <!-- Cream Drips -->
+                        <div class="drip drip-1"></div>
+                        <div class="drip drip-2"></div>
+                        <div class="drip drip-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cake-controls" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <button id="blow-btn" class="blow-candles-btn">
+                    <i class="fa-solid fa-wind"></i> ক্লিকে মোমবাতি নেভাও
+                </button>
+                <button id="mic-btn" class="mic-candles-btn">
+                    <i class="fa-solid fa-microphone"></i> মাইকে ফু দিয়ে নেভাও
+                </button>
+            </div>
+            <p id="mic-status" class="mic-status-text"></p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>Made with 💖 for Shimran</p>
+        </footer>
+    </div>
+
+    <!-- ================= WISH MODAL / POPUP ================= -->
+    <div id="wish-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-icon">🎉</div>
+            <h2 class="modal-title">ইচ্ছে পূরণ হোক! ✨</h2>
+            <p class="modal-msg">তোমার সব স্বপ্ন সত্যি হোক, শিমরান! তোমার প্রতিটি দিন আনন্দ আর ভালোবাসায় ভরে উঠুক। 💖🎂🌟</p>
+            <button id="close-modal-btn" class="modal-close-btn">ধন্যবাদ! 😊</button>
+        </div>
+    </div>
+
+    <!-- Canvas Confetti Library via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
